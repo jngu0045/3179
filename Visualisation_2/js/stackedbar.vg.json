@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 200,
+    "title": "Broad Level Threats to Species in Australia",
+    "data": {"url": "https://raw.githubusercontent.com/jngu0045/FIT3179/main/Visualisation_2/data/ausstackedbar.csv"},
+    "mark": "bar",
+    "params": [
+        {
+          "name": "legend_selection",
+          "select": {"type": "point", "fields": ["Threat"]},
+          "bind": "legend"
+        }
+      ],
+      "transform": [{"filter": {"param": "legend_selection"}}],
+    "encoding": {
+      "x": {
+        "field": "Group",
+        "type": "nominal",
+        "title": "Group"
+      },
+      "y": {
+        "field": "Count",
+        "type": "quantitative"
+      },
+      "color": {
+        "field": "Threat",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "Adverse fire regimes", 
+            "Changed surface and groundwater regimes", 
+            "Climate change and severe weather",
+            "Disrupted ecosystem and population processes", 
+            "Habitat loss, fragmentation and degradation", 
+            "Invasive species and diseases",
+            "Overexploitation and other direct harm from human activities", 
+            "Pollution"],
+            "range": [
+                "#e7ba52",
+                "#c7c7c7",
+                "#aec7e8",
+                "#1f77b4",
+                "#9467bd",
+                "#D7BDE2",
+                "#E74C3C",
+                "#fdbe85",
+                "#fd8d3c"
+              ]
+        },
+        "title": "Broad Level Threat"
+      }
+    }
+  }

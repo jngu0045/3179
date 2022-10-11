@@ -1,13 +1,14 @@
 body *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
 }
 
 h1 {
     font-weight: 900;
+    color: rgb(53, 68, 82);
 }
 
 body {
-    background-color: lightgray;
+    background-color: rgb(70, 85, 112);
 }
 
 .page {
