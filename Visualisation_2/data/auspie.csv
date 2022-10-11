@@ -1,55 +1,17 @@
-"","Sub category threat","Count"
-"1","",1
-"2","Agriculture and aquaculture",490
-"3","Alteration to groundwater levels",19
-"4","Alteration to surface water flows and infiltration",29
-"5","Bycatch",72
-"6","Climate change and severe weather-Unspecified",54
-"7","Collision",22
-"8","Dams and altered flow regimes",113
-"9","Direct harvest",74
-"10","Disease",159
-"11","Effluent and wastewater",20
-"12","Energy production and mining",105
-"13","Entanglement",1
-"14","Fisheries",2
-"15","Forestry",47
-"16","Garbage and solid waste",14
-"17","Genetic introgression/hybridisation",15
-"18","Geological events",4
-"19","Habitat shifting and alteration",71
-"20","Herbicides and pesticides",40
-"21","Human intrusion",110
-"22","Increase in fire frequency/intensity",196
-"23","Increased frequency/severity of droughts",88
-"24","Invasive amphibian",13
-"25","Invasive bird",10
-"26","Invasive fish",86
-"27","Invasive invertebrate",43
-"28","Invasive predator",276
-"29","Invasive rabbit",131
-"30","Invasive reptile",7
-"31","Invasive rodent",76
-"32","Invasive ungulate",178
-"33","Invasive weed",581
-"34","Lack of recruitment",5
-"35","Light pollution",5
-"36","Military development",2
-"37","Nutrient loads",6
-"38","Oil spills",2
-"39","Oil Spills",3
-"40","Other change in fire regime/trend unspecified",270
-"41","Other natural system modifications",399
-"42","Persecution",9
-"43","Problematic native species",146
-"44","Sea-level rise",17
-"45","Seepage from mining",6
-"46","Small, restricted and reduced population",2
-"47","Small/restricted population",3
-"48","Storms and flooding",25
-"49","Suppression in fire frequency/intensity",227
-"50","Temperature extremes",32
-"51","Transportation and service corridors",324
-"52","Unintentional hunting",1
-"53","Unintentional poisoning",4
-"54","Urban and commercial development and maintenance",242
+Sub category threat,Count,Percentage
+Invasive weed,581,14.72004054
+Agriculture and aquaculture,490,12.41449202
+Other natural system modifications,399,10.1089435
+Transportation and service corridors,324,8.208766152
+Invasive predator,276,6.992652648
+Other change in fire regime/trend unspecified,270,6.84063846
+Urban and commercial development and maintenance,242,6.131238916
+Suppression in fire frequency/intensity,227,5.751203446
+Increase in fire frequency/intensity,196,4.965796808
+Invasive ungulate,178,4.509754244
+Disease,159,4.028375982
+Problematic native species,146,3.699011908
+Invasive rabbit,131,3.318976438
+Dams and altered flow regimes,113,2.862933874
+Human intrusion,110,2.78692678
+Energy production and mining,105,2.66024829
