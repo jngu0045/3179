@@ -1,0 +1,113 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 600,
+    "title": "Red List Index over time (2001 vs 2021)",
+    "data": {
+        "url": "https://raw.githubusercontent.com/jngu0045/FIT3179/main/week10hw/data/redlistindex_ts.csv"
+      },
+      "params": [
+        {
+            "name": "Country_selection",
+            "bind": {
+                "input": "select",
+                "options": [
+                    null,
+                    "Australia",
+                    "China",
+                    "India",
+                    "Tanzania",
+                    "New Zealand"
+                ],
+                "labels": [
+                    "Show All",
+                    "Australia",
+                    "China",
+                    "India",
+                    "Tanzania",
+                    "New Zealand"
+                ],
+                "name": "Country Selection:"
+            }
+        }
+      ],
+    "transform": [
+        {
+    "filter": {
+        "field": "Country",
+        "oneOf": ["Australia", "China", "India", "Tanzania", "New Zealand"]
+      }
+    },
+    {"filter":  "Country_selection == null || datum.Country == Country_selection"},
+        {
+      "filter": {
+        "field": "Year",
+        "oneOf": [2001, 2021]
+      }
+    }
+  ],
+    "encoding": {
+    "x": {
+      "field": "Red List Index",
+      "type": "quantitative",
+      "title": "Red List Index"
+    },
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "title": "Country",
+      "axis": {
+        "offset": 0,
+        "ticks": false,
+        "minExtent": 1,
+        "domain": false
+      }
+    }
+  },
+    "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "detail": {
+          "field": "Country",
+          "type": "nominal"
+        },
+        "color": {"value": "#db646f"}
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "color": {
+          "field": "Year",
+          "type": "ordinal",
+          "scale": {
+            "domain": [2001, 2021],
+            "range": ["#e6959c", "#911a24"]
+          },
+          "title": "Year"
+        },
+        "size": {"value": 100},
+        "opacity": {"value": 1},
+        "tooltip": {"field": "Red List Index", "type": "quantitative", "title": "Red List Index"}
+      }
+    },
+    {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "bottom",
+          "dx": 3
+        },
+        "encoding": {
+          "text": {"field": "Red List Index", "type": "quantitative"}
+        }
+    }
+  ]
+
+}
+
+
