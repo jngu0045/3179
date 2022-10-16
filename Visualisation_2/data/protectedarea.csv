@@ -1,0 +1,117 @@
+Country,Domain,Year,Value
+Australia,Terrestrial ,1950,0.635673865
+Australia,Terrestrial ,1960,0.639003557
+Australia,Terrestrial ,1970,1.100295299
+Australia,Terrestrial ,1980,2.84802681
+Australia,Terrestrial ,1985,3.470388902
+Australia,Terrestrial ,1990,5.120705938
+Australia,Terrestrial ,1995,6.205882384
+Australia,Terrestrial ,2000,7.168500284
+Australia,Terrestrial ,2001,7.211582254
+Australia,Terrestrial ,2002,8.731705538
+Australia,Terrestrial ,2003,8.857908556
+Australia,Terrestrial ,2004,8.989352109
+Australia,Terrestrial ,2005,9.176163449
+Australia,Terrestrial ,2006,9.396705407
+Australia,Terrestrial ,2007,10.27405358
+Australia,Terrestrial ,2008,10.45484676
+Australia,Terrestrial ,2009,11.14512594
+Australia,Terrestrial ,2010,11.46112723
+Australia,Terrestrial ,2011,12.27406638
+Australia,Terrestrial ,2012,13.95680711
+Australia,Terrestrial ,2013,15.55184963
+Australia,Terrestrial ,2014,16.89068424
+Australia,Terrestrial ,2015,18.27716517
+Australia,Terrestrial ,2016,19.0224752
+Australia,Terrestrial ,2017,19.27703691
+Australia,Terrestrial ,2018,19.37882219
+Australia,Terrestrial ,2019,19.38167621
+Australia,Terrestrial ,2020,20.33939401
+Australia,Terrestrial ,2021,20.33939401
+World,Terrestrial ,1950,1.293440087
+World,Terrestrial ,1960,1.636499257
+World,Terrestrial ,1970,2.423601746
+World,Terrestrial ,1980,4.661890893
+World,Terrestrial ,1985,5.159509116
+World,Terrestrial ,1990,6.107554115
+World,Terrestrial ,1995,7.074417129
+World,Terrestrial ,2000,8.621269231
+World,Terrestrial ,2001,9.048054902
+World,Terrestrial ,2002,9.555525818
+World,Terrestrial ,2003,9.788295388
+World,Terrestrial ,2004,10.06401669
+World,Terrestrial ,2005,10.33935067
+World,Terrestrial ,2006,10.75796902
+World,Terrestrial ,2007,11.11414801
+World,Terrestrial ,2008,11.41340532
+World,Terrestrial ,2009,11.71642394
+World,Terrestrial ,2010,11.87815867
+World,Terrestrial ,2011,12.02609052
+World,Terrestrial ,2012,12.20798092
+World,Terrestrial ,2013,12.43436652
+World,Terrestrial ,2014,12.56247232
+World,Terrestrial ,2015,12.72311407
+World,Terrestrial ,2016,12.88724416
+World,Terrestrial ,2017,13.07788406
+World,Terrestrial ,2018,13.21318781
+World,Terrestrial ,2019,13.36042796
+World,Terrestrial ,2020,13.44337812
+World,Terrestrial ,2021,13.44337812
+Australia,Marine,1950,0.002078609
+Australia,Marine,1960,0.002081039
+Australia,Marine,1970,0.00280509
+Australia,Marine,1980,0.007760466
+Australia,Marine,1985,4.716700055
+Australia,Marine,1990,4.739506445
+Australia,Marine,1995,4.953411268
+Australia,Marine,2000,5.07762367
+Australia,Marine,2001,5.081604736
+Australia,Marine,2002,5.386280767
+Australia,Marine,2003,5.386472714
+Australia,Marine,2004,5.414960961
+Australia,Marine,2005,5.473422002
+Australia,Marine,2006,5.55480849
+Australia,Marine,2007,5.618039035
+Australia,Marine,2008,5.625104606
+Australia,Marine,2009,5.993009968
+Australia,Marine,2010,6.002621866
+Australia,Marine,2011,6.077737295
+Australia,Marine,2012,11.22754982
+Australia,Marine,2013,11.24974392
+Australia,Marine,2014,11.2523838
+Australia,Marine,2015,11.25244454
+Australia,Marine,2016,11.48034565
+Australia,Marine,2017,11.62883806
+Australia,Marine,2018,40.97328875
+Australia,Marine,2019,40.97328875
+Australia,Marine,2020,40.97328875
+Australia,Marine,2021,40.97328875
+World,Marine,1950,0.25776601
+World,Marine,1960,0.264439663
+World,Marine,1970,0.287594595
+World,Marine,1980,0.779698195
+World,Marine,1985,1.050931412
+World,Marine,1990,1.118330408
+World,Marine,1995,1.224027963
+World,Marine,2000,1.319959428
+World,Marine,2001,1.3948362
+World,Marine,2002,1.469575838
+World,Marine,2003,1.493931973
+World,Marine,2004,1.573858878
+World,Marine,2005,1.640088958
+World,Marine,2006,3.369905497
+World,Marine,2007,4.14650406
+World,Marine,2008,4.199123322
+World,Marine,2009,5.357020214
+World,Marine,2010,6.133407182
+World,Marine,2011,6.176132545
+World,Marine,2012,7.308586822
+World,Marine,2013,7.472624188
+World,Marine,2014,8.411175981
+World,Marine,2015,8.823690277
+World,Marine,2016,9.988331222
+World,Marine,2017,13.32886139
+World,Marine,2018,16.24245526
+World,Marine,2019,16.99459385
+World,Marine,2020,17.37691429
+World,Marine,2021,17.37691429
