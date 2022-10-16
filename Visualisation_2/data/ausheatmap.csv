@@ -6,6 +6,7 @@ Birds,EX (rediscovered),0
 Birds,EN,324
 Birds,EX (Wild),0
 Birds,VU,338
+Fish,EX (rediscovered),0
 Fish,CR (PE),0
 Fish,CE,22
 Fish,CR,27
@@ -15,7 +16,7 @@ Fish,VU,175
 Frogs,CR (PE),0
 Frogs,CR,41
 Frogs,EN,30
-Frogs,CR (PE),0
+Frogs,CE,0
 Frogs,EX (Wild),0
 Frogs,EX (rediscovered),0
 Frogs,VU,41
