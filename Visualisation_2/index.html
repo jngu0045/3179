@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Multiple Visualisations | An Example</title>
+  <title>Data Visualisation II | Jessica Nguyen</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -30,8 +30,11 @@
     <!-- pure grid group -->
     <div class="pure-g">
         <div class="pure-u-1-1">
-          <h1>A Look into Endangered Species</h1>
-          <p> This visualisation aims to provide insights on the current status and threats to endangered species. </p>
+          <h1 style="text-align:center">A Look into Endangered Species</h1>
+          <p style="text-align:center"> <span class='important_text'> Endangered species </span> can be defined as any species at <span class='amber_text'>risk of extinction</span> 
+            due to a <span class='important_text'> fast and sudden decrease </span> in its population or loss of habitat. There are various factors that could lead
+            a species into becoming endangered. Australia is home to many unique and diverse species as a result of Australia's geographical isolation. However, more than <span class='important_text'>480 native animals </span> are at <span class = 'amber_text'> risk of becoming extinct</span>.
+          <p style="text-align:center"> This visualisation aims to provide insights on the current status and threats to endangered species. </p>
         </div>
       </div>
       <!-- end pure grid group -->
@@ -48,14 +51,16 @@
      <div class="pure-g">
       <div class="pure-u-1-2">
         <div class="description description-left">
-          <h2>What is the Red List Index</h2>
-          <p>Red List Index measures change in aggregate extinction risk across groups of species. It is based on genuine 
+          <h2 id = "idselect">What is the Red List Index?</h2>
+          <p> <span class = 'important_text'>The Red List Index </span> show us the trend in overall extinction risk for species. It is based on genuine 
             changes in the number of species in each category of extinction risk on The IUCN Red List of Threatened Species 
-            (www.iucnredlist.org) is expressed as changes in an index ranging from 0 to 1.
+            and is expressed as an index ranging from <span class = 'important_text'>0 to 1</span>. </p>
 
-            The Red List Index value ranges from 1 (all species are categorized as ‘Least Concern')
-            to 0 (all species are categorized as ‘Extinct'), and so indicates how far the set of species has moved overall
+          <p> The Red List Index value ranges from 1, where all species are categorized as ‘Least Concern',
+            to 0, where all species are categorized as ‘Extinct', thus, indicates how far the set of species has moved overall
             towards extinction. </p>
+
+          <p> On the right, we can see that, <span class = 'important_text'>New Zealand </span>has one of the <span class = 'amber_text'>lowest</span> Red List Indexes in the world, with a large change between 2001 and 2021.</p>
         </div>
       </div>
       <div class="pure-u-1-2">
@@ -71,11 +76,21 @@
       </div>
     <div class="pure-u-1-2">
       <div class="description description-right">
-        <h2>IUCN Categories</h2>
-        <p> The International Union for Conservation of Nature’s (IUCN) Red List is an indicator of biodiversity at a global level. The catergories include “Not Evaluated”, “Data Deficient”,
-           “Least Concern”, “Near Threatened”, “Vulnerable”, “Critically Endangered”, “Extinct in the Wild” and “Extinct”. </p>
-        <p> It can be seen that plants have the highest number of species classified as endangered. 12350 plant species are classified as 
-          endangered, 1050 are classified as vulnerable and 427 as critical.
+        <h2 id = "idselect">IUCN Categories</h2>
+        <p> The International Union for Conservation of Nature’s (IUCN) Red List is an indicator of biodiversity at a global level. </p>
+          <p> The catergories include: <ul>
+            <li>“Not Evaluated” (NE) </li>
+            <li>“Data Deficient” (DD)</li>
+            <li>“Least Concern” (LC)</li>
+            <li>“Near Threatened” (NT)</li>
+            <li>“Vulnerable” (VU)</li>
+            <li>“Endangered" (EN)</li>
+            <li>“Critically Endangered" (CR)</li>
+            <li>“Extinct in the Wild” (EW)</li>
+            <li>“Extinct” (EX)</li>
+            </ul> </p>
+        <p> From the heatmap, it can be seen that <span class = 'important_text'> plants</span> have the <span class = 'amber_text'>highest</span> number of species classified as endangered. <span class = 'amber_text'>12350</span> plant species are classified as 
+          endangered, <span class = 'amber_text'>1050</span> are classified as vulnerable and <span class = 'amber_text'>427</span> as critical.
         </p>
       </div>
     </div>
@@ -84,16 +99,27 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <h2>A Deeper Look into Threats</h2>
-        <p> Invasive weeds are the number one threat to Australian species, followed by agriculture and aquaculture. </p>
-      </div>
+        <h2 style="text-align:center" id = "idselect">What is Threatening our Species?</h2>
     </div>
     <!-- end pure grid group -->
-    
+
     <!-- pure grid group -->
-    <div class="pure-g">
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+           <div id="vis4" class="vis-container"></div>
+        </div>
+      </div>
+     <!-- end pure grid group -->
+
+     <!-- pure grid group -->
+     <div class="pure-g">
       <div class="pure-u-1-2">
-        <div id="vis4" class="vis-container"></div>
+        <div class="description description-left">
+          <h2 id = "idselect">Broad and Sub Category Threats</h2>
+          <p> From the stacked bar chart, we can see that <span class = 'important_text'>plants</span> experience the <span class = 'amber_text'>highest number of threats</span>, followed by birds and mammals.
+           The most predominant threats include habitat loss, fragmentation and disease and invasive species and diseases.  </p>
+        <p> Taking a further look at the sub category threats, we find that <span class = 'amber_text'>invasive weeds </span>are the number one threat, followed by agriculture and aquaculture.</p>
+          </div>
       </div>
       <div class="pure-u-1-2">
         <div id="vis5" class="vis-container"></div>
@@ -101,13 +127,39 @@
     </div>
     <!-- end pure grid group -->
 
-    </div> <!-- end page -->
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="vis6" class="vis-container"></div>
+      </div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description description-right">
+        <h2 id = "idselect">Protected Areas in Australia</h2>
+        <p> This line graph displays how <span class = 'important_text'>protected areas</span> have changed over time in Australia, from 1950 - 2021. </p>
+        <p>Protected Areas are determined by <span class = 'important_text'>IUCN management objectives</span>. The landscape we know today has largely changed as a result
+          of <span class = 'amber_text'>human activities</span> such as food production and forestry. Consequently, we see habitat loss and loss of
+        biodiversity. To prevent further loss, protected areas act to safeguard nature and other cultural resources. </p>
+        <p> Looking at both marine and terrestrial protected areas, we can see that both have <span class = 'important_text'>increased largely</span> over time, with the percentage of marine protected areas drastically increasing in 2017.
+          Currently, 20.34% of total terrestrial land is protected in Australia and 40.97% of marine land.
+        </p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>This visualisation is created by Jessica Nguyen (30581443).</p>
+
+   
+ <!-- end page -->
     <script type="text/javascript">
         var specVis1 = "js/redlistindex_map.vg.json";
-        var specVis2 = "js/linegraph_interactive.vg.json";
-        var specVis3 = "js/heatmap.vg.json";
+        var specVis2 = "js/dotplot.vg.json";
+        var specVis3 = "js/heatmap2.vg.json";
         var specVis4 = "js/stackedbar.vg.json";
-        var specVis5 = "js/piechart.vg.json"
+        var specVis5 = "js/piechart.vg.json";
+        var specVis6 = "js/linegraph_marine.vg.json"
     
         vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -126,6 +178,10 @@
         }).catch(console.error)
 
         vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error)
+
+        vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error)
 

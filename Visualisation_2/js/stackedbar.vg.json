@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 300,
-    "height": 200,
+    "width": 580,
+    "height": 300,
     "title": "Broad Level Threats to Species in Australia",
     "data": {"url": "https://raw.githubusercontent.com/jngu0045/FIT3179/main/Visualisation_2/data/ausstackedbar.csv"},
     "mark": "bar",
@@ -17,7 +17,8 @@
       "x": {
         "field": "Group",
         "type": "nominal",
-        "title": "Group"
+        "title": "Group",
+        "sort": ["Plants", "Birds", "Mammals", "Fish", "Reptiles", "Invertebrates", "Frogs"]
       },
       "y": {
         "field": "Count",
@@ -37,18 +38,19 @@
             "Overexploitation and other direct harm from human activities", 
             "Pollution"],
             "range": [
-                "#e7ba52",
-                "#c7c7c7",
-                "#aec7e8",
-                "#1f77b4",
-                "#9467bd",
-                "#D7BDE2",
-                "#E74C3C",
-                "#fdbe85",
-                "#fd8d3c"
+                "#F1B176",
+                "#E2CC9B",
+                "#D0DBA3",
+                "#8AB0D0",
+                "#90A15C",
+                "#977761",
+                "#9C9ED9",
+                "#C7686D"
               ]
         },
+        "legend": {"direction": "vertical", "orient": "right", "labelLimit": 300},
         "title": "Broad Level Threat"
       }
-    }
+    },
+    "config": {"view": {"stroke": null}}
   }

@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 400,
+    "height": 300,
+    "data": {"url": "https://raw.githubusercontent.com/jngu0045/FIT3179/main/Visualisation_2/data/protectedarea.csv"},
+    "transform": [{    
+        "filter": {
+            "field": "Country",
+            "oneOf": ["Australia"]
+          }
+        }],
+    "encoding": {
+      "color": {
+        "field":"Domain",
+        "type":"nominal",
+        "scale": {
+            "range": [
+                "#A6D0B0",
+                "#5CB15E"
+            ]
+        },
+        "legend": {"direction": "horizontal", "orient": "bottom"}
+      }
+    },
+    "layer": [{
+        "mark": {
+            "type": "line",
+            "point": true
+          },
+      "encoding": {
+        "x": {"field": "Year", "type": "ordinal", "title": "Year"},
+        "y": {"field": "Value", "type": "quantitative", "title": "Percentage"},
+        "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+            {"field": "Value", "type": "quantitative", "title": "Percentage", "format": ".2f"}]
+      }
+    },{
+      "encoding": {
+        "x": {"aggregate": "max", "field": "Year", "type": "ordinal"},
+        "y": {"aggregate": {"argmax": "Year"}, "field": "Value", "type": "quantitative"}
+      },
+      "layer": [{
+        "mark": {"type": "circle"}
+      }]
+    }],
+    "config": {"view": {"stroke": null}}
+  }

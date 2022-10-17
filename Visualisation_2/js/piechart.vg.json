@@ -1,21 +1,49 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 300,
-    "height": 200,
+    "width": 195,
+    "height": 250,
     "title": "Top 10 Sub Category Threats",
     "data": {"url": "https://raw.githubusercontent.com/jngu0045/FIT3179/main/Visualisation_2/data/auspie.csv"},
     "layer": [{
       "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
     },{
-      "mark": {"type": "text", "radiusOffset": 10},
+      "mark": {"type": "text", "radiusOffset": 15},
       "encoding": {
         "text": {"field": "Percentage", "type": "quantitative"}
       }
     }],
     "encoding": {
       "theta": {"field": "Percentage", "type": "quantitative", "stack": true},
+      "order": {"field": "Percentage", "type": "quantitative", "sort": "ascending"},
       "radius": {"field": "Percentage", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
-      "color": {"field": "Sub category threat", "type": "nominal"}
-    }
+      "color": {"field": "Sub category threat", "type": "nominal",
+      "scale": {
+        "domain": [
+          "Invasive weed", 
+          "Agriculture and aquaculture", 
+          "Other natural system modifications",
+          "Transportation and service corridors", 
+          "Invasive predator", 
+          "Other change in fire regime/trend unspecified",
+          "Urban and commercial development and maintenance", 
+          "Suppression in fire frequency/intensity",
+          "Increase in fire frequency/intensity",
+          "Invasive ungulate"],
+          "range": [
+              "#F1B176",
+              "#E2CC9B",
+              "#D0DBA3",
+              "#8AB0D0",
+              "#90A15C",
+              "#977761",
+              "#9C9ED9",
+              "#C7686D",
+              "#4880B8",
+              "#F0B7B0"
+            ]
+      },
+      "legend": {"direction": "vertical", "orient": "right", "labelLimit": 300}}
+    },
+    "config": {"view": {"stroke": null}}
   }
   

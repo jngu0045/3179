@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 900,
+    "width": 800,
     "height": 450,
     "title": "Red List Index (2021)",
     "projection": {"type": "equalEarth"},
@@ -29,8 +29,8 @@
         "type": "quantitative",
         "title": "Red List Index",
         "scale": {
-            "range": ["#fdbe85", "#fd8d3c", "#e6550d", 
-            "#a63603"]
+            "range": ["#B8DAB5", "#8AC591", "#449551", 
+            "#2E6036"]
             }
         },
         "tooltip": [
@@ -47,5 +47,6 @@
         },
         "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
       }
-    ]
+    ],
+    "config": {"view": {"stroke": null}}
 }

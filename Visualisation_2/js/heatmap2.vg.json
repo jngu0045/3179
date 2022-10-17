@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 310,
+    "title": "IUCN Red List of Threatened Species (Australia)",
+    "data": {"url": "https://raw.githubusercontent.com/jngu0045/FIT3179/main/Visualisation_2/data/ausheatmap.csv"},
+    "encoding": {
+      "y": {"field": "Group", "type": "nominal"},
+      "x": {"field": "Status", "type": "nominal", "sort": ["VU", "EN", "CR", "EW", 
+    "EX (rediscovered"]}
+    },
+    "layer": [
+      {
+        "mark": {"type": "rect" , "strokeWidth": 2},
+        "encoding": {
+          "color": {
+            "field": "Count",
+            "type": "quantitative",
+            "title": "Count",
+            "scale": {
+                "range": ["#F3FFF2", "#A6D0B0", "#5CB15E", 
+                "#2E6036"]
+                }
+            ,
+            "legend": {"direction": "vertical", "gradientLength": 120}
+          }
+        }
+      },
+      {
+        "mark": "text",
+        "encoding": {
+          "text": {"field": "Count", "type": "quantitative"},
+          "color": {
+            "condition": {"test": "datum.Count < 600", "value": "black"},
+            "value": "white"
+          }
+        }
+      }
+    ],
+    "config": {
+        "scale": {
+          "bandPaddingInner": 0,
+          "bandPaddingOuter": 0
+        },
+        "view": {"step": 40},
+        "range": {
+          "ramp": {
+            "scheme": "greens"
+          }
+        },
+        "axis": {
+          "domain": false
+        }
+      }
+  }

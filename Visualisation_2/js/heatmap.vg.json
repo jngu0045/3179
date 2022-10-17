@@ -5,6 +5,7 @@
         "url": "https://raw.githubusercontent.com/jngu0045/FIT3179/main/Visualisation_2/data/ausheatmap.csv"
       },
     "params": [{"name": "highlight", "select": "point"}],
+    "layer":[{
     "mark": {"type": "rect", "strokeWidth": 2},
     "encoding": {
       "y": {
@@ -32,7 +33,19 @@
         "value": 0.5
       },
       "order": {"condition": {"param": "highlight", "value": 1}, "value": 0}
-    },
+    }
+  },
+  {
+    "mark": "text",
+    "encoding": {
+      "text": {"field": "Count", "type": "quantitative"},
+      "color": {
+        "condition": {"test": "datum.Count < 600", "value": "black"},
+        "value": "white"
+      }
+    }
+  }
+    ],
     "config": {
       "scale": {
         "bandPaddingInner": 0,
@@ -41,7 +54,7 @@
       "view": {"step": 40},
       "range": {
         "ramp": {
-          "scheme": "yellowgreenblue"
+          "scheme": "greens"
         }
       },
       "axis": {
